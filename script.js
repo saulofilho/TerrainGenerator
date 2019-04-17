@@ -14,7 +14,7 @@ var sliderStrokeW;
 
 
 function setup() {
-  var canvas = createCanvas(1200, 400, WEBGL);
+  var canvas = createCanvas(windowWidth, windowHeight, WEBGL);
   canvas.parent('myContainer');
   cols = w/scl;
   rows = h/scl;   
@@ -28,26 +28,38 @@ function setup() {
 sliderPI = createSlider(1, 10, 1, 0.01);
 sliderPI.parent('myInputs');
 sliderPI.class('inputs');
+let text1 = createP('PI');
+text1.parent('myInputs');
 // slider velocidade
 sliderVelocidade = createSlider(0.01, 1, 0.01, 0.01);
 sliderVelocidade.parent('myInputs');
 sliderVelocidade.class('inputs');
+let text2 = createP('Velocidade');
+text2.parent('myInputs');
 // slider onda
 sliderOnda = createSlider(0, 1, 0, 0.01);
 sliderOnda.parent('myInputs');
 sliderOnda.class('inputs');
+let text3 = createP('Deformidade da Onda');
+text3.parent('myInputs');
 // slider tamanho da onda mais
 sliderTamOndaMais = createSlider(10, 900, 10, 0.01);
 sliderTamOndaMais.parent('myInputs');
 sliderTamOndaMais.class('inputs');
+let text4 = createP('Tamanho da Onda +');
+text4.parent('myInputs');
 // slider tamanho da onda menos
 sliderTamOndaMenos = createSlider(-200, 0, 0, 0.01);
 sliderTamOndaMenos.parent('myInputs');
 sliderTamOndaMenos.class('inputs');
+let text5 = createP('Tamanho da Onda -');
+text5.parent('myInputs');
 // slider stroke weight
-sliderStrokeW = createSlider(1, 7, 1, 1);
+sliderStrokeW = createSlider(0.01, 9, 9, 0.01);
 sliderStrokeW.parent('myInputs');
 sliderStrokeW.class('inputs');
+let text6 = createP('Stroke Weight');
+text6.parent('myInputs');
 }
 
 function draw() {
