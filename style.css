@@ -8,23 +8,101 @@ h1 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 4em;
-    margin-top: -1.5em;
-    padding-left: 0.2em;
+    margin-top: -1.2em;
+    text-align: center;
+}
+h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    margin-top: -3em;
+    text-align: center;
 }
 #myInputs {
-    font-size: 0.6em;
-    padding-left: 2em;
-    margin-bottom: 3em;
+    padding: 0 0 5% 2em;
+    margin-top: -1em;
 }
 .inputs {
-    width: 80vw;
+    width: 15vw;
+    position: relative;
+}
+#myTexts {
+    padding-left: 2em;
+    margin-top: -3em;
+}
+.texts {
+    font-size: 0.6em;
+    display: inline;
+    padding-left: 9.5vw;
 }
 p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    padding-left: 1em;
     color: white;
 }
 #myContainer {
     margin-bottom: 6em;
+}
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 2em;
+        margin-top: -2.5em;
+        text-align: center;
+    }
+    #myInputs {
+        padding: 0 0 5% 2em;
+        margin-top: -1em;
+    }
+    .inputs {
+        width: 15vw;
+        position: relative;
+    }
+    #myTexts {
+        padding-left: 2em;
+        margin-top: -3em;
+    }
+    .texts {
+        font-size: 0.4em;
+        display: inline;
+        padding-left: 9vw;
+    }
+}
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 1.5em;
+        margin-top: -3.5em;
+        text-align: center;
+    }
+    #myInputs {
+        padding: 0 0 5% 2em;
+        margin-top: -0.7em;
+    }
+    .inputs {
+        width: 15vw;
+        position: relative;
+    }
+    #myTexts {
+        margin-top: -3em;
+    }
+    .texts {
+        font-size: 0.2em;
+        display: inline;
+        padding-left: 2em;
+    }
+}
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1em;
+        margin-top: -5.5em;
+        text-align: center;
+    }
+    #myInputs {
+        margin-top: -0.2em;
+    }
+    #myTexts {
+        padding-top: 2em;
+    }
+    .texts {
+        font-size: 0.2em;
+        text-align: left;
+    }
 }
