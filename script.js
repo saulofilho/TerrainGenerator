@@ -12,7 +12,6 @@ var sliderTamOndaMenos;
 var sliderTamOndaMais;
 var sliderStrokeW;
 
-
 function setup() {
   var canvas = createCanvas(windowWidth, windowHeight, WEBGL);
   canvas.parent('myContainer');
@@ -113,4 +112,12 @@ var sW = sliderStrokeW.value();
     }
     endShape();
   }
+}
+
+function mousePressed (){
+  windowResized();
+}
+
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
 }
