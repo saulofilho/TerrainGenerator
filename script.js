@@ -34,35 +34,35 @@ function setup() {
   sliderStrokeW = createSlider(0.01, 9, 9, 0.01);
   sliderStrokeW.parent('myInputs');
   sliderStrokeW.class('inputs');
-  let text6 = createP('Stroke Weight');
+  let text6 = createP('STROKE WEIGHT');
   text6.parent('myTexts');
   text6.class('texts');
   // slider velocidade
   sliderVelocidade = createSlider(0.01, 1, 0.01, 0.01);
   sliderVelocidade.parent('myInputs');
   sliderVelocidade.class('inputs');
-  let text2 = createP('Velocidade');
+  let text2 = createP('SPEED');
   text2.parent('myTexts');
   text2.class('texts');
   // slider onda
   sliderOnda = createSlider(0, 1, 0, 0.01);
   sliderOnda.parent('myInputs');
   sliderOnda.class('inputs');
-  let text3 = createP('Deformidade da Onda');
+  let text3 = createP('WAVE DEFORMITY');
   text3.parent('myTexts');
   text3.class('texts');
   // slider tamanho da onda mais
   sliderTamOndaMais = createSlider(10, 900, 10, 0.01);
   sliderTamOndaMais.parent('myInputs');
   sliderTamOndaMais.class('inputs');
-  let text4 = createP('Tamanho da Onda +');
+  let text4 = createP('WAVE SIZE (+)');
   text4.parent('myTexts');
   text4.class('texts');
   // slider tamanho da onda menos
   sliderTamOndaMenos = createSlider(-200, 0, 0, 0.01);
   sliderTamOndaMenos.parent('myInputs');
   sliderTamOndaMenos.class('inputs');
-  let text5 = createP('Tamanho da Onda -');
+  let text5 = createP('WAVE SIZE (-)');
   text5.parent('myTexts');
   text5.class('texts');
 }
@@ -121,3 +121,9 @@ function mousePressed (){
 function windowResized(){
   resizeCanvas(windowWidth, windowHeight);
 }
+
+$(document).ready(function() {
+  $("button").click(function() {
+    $("span").toggle();
+  })
+})

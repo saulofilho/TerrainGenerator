@@ -4,12 +4,19 @@ html, body {
     height: 100%;
     background-color: black;
 }
+button {
+    background-color: black;
+    color: white;
+}
 h1 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 4em;
-    margin-top: -1.2em;
     text-align: center;
+}
+a {
+    text-decoration: none;
+    color: white;
 }
 h2 {
     color: white;
@@ -28,6 +35,7 @@ h2 {
 }
 #myTexts {
     padding-left: 2em;
+    padding-bottom: 2em;
     margin-top: -3em;
 }
 .texts {
@@ -40,12 +48,13 @@ p {
     color: white;
 }
 #myContainer {
-    margin-bottom: 6em;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 @media screen and (max-width: 1200px) {
     h1 {
         font-size: 2em;
-        margin-top: -2.5em;
         text-align: center;
     }
     #myInputs {
@@ -69,7 +78,6 @@ p {
 @media screen and (max-width: 800px) {
     h1 {
         font-size: 1.5em;
-        margin-top: -3.5em;
         text-align: center;
     }
     #myInputs {
@@ -81,7 +89,7 @@ p {
         position: relative;
     }
     #myTexts {
-        margin-top: -3em;
+        margin-top: -2em;
     }
     .texts {
         font-size: 0.2em;
@@ -92,11 +100,10 @@ p {
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 1em;
-        margin-top: -5.5em;
         text-align: center;
     }
     #myInputs {
-        margin-top: -0.2em;
+        padding-top: 1em;
     }
     #myTexts {
         padding-top: 2em;
