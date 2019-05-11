@@ -65,6 +65,13 @@ function setup() {
   let text5 = createP('WAVE SIZE (-)');
   text5.parent('myTexts');
   text5.class('texts');
+  saveButton = createButton('SAVE IMG');
+  saveButton.mousePressed(saveImg);
+  saveButton.parent('but');
+}
+
+function saveImg() {
+  save('terrain.png');
 }
 
 function draw() {
